@@ -1,0 +1,24 @@
+{
+  "name": "docapp",
+  "version": "1.0.0",
+  "description": "App for document managment with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "server": "nodemon src/index.js",
+    "client": "cd example-create-react-app-express && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Alonso Huayta",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "mssql": "^4.1.0",
+    "react-pdf": "^3.0.5",
+    "tedious": "^2.6.4"
+  }
+}
